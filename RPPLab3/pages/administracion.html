@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/app.js" type="module" defer></script>
+    <title>PPLab3-MatiasFerrari</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-header">
+            <img src="../img/logoPerro3.jpg" alt="Logo Empresa" id="logo">
+            <ul class="nav-content">
+                <li> <a href="#">Nosotros</a> </li><br>
+                <li> <a href="./administracion.html">Anuncio</a> </li><br>
+                <li> <a href="#">Blog</a> </li><br>
+                <li> <a href="#">Contacto</a> </li><br>
+            </ul>
+        </nav>
+        <section>
+            <div class="container">
+                <h1 class="titulo">Administracion</h1>
+                <div class="backgroundImg"></div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <fieldset>
+
+            <legend>Informacion Del Anuncio</legend>
+            <form>
+                <input type="hidden" name="formId" id="id">
+                
+                <label for="txtTitulo">Titulo:</label> <br>
+                <input type="text" id="txtTitulo" name="Titulo" placeholder="Titulo" >
+                <small></small> 
+                <br>
+                
+                <label for="txtDescripcion">Descripcion:</label> <br>
+                <input type="text" id="txtDescripcion" name="Descripcion" placeholder="Descripcion" > 
+                <small></small>
+                <br>
+                <label for="radioAnimal">Animal:</label> <br> <br>
+                <label> Perro <input type="radio" name="radioAnimal" value="Perro" checked/></label>
+                <label> Gato <input type="radio" name="radioAnimal" value="Gato"/></label><br>
+
+
+
+                <label for="numPrecio">Precio:</label> <br>
+                <input type="number" id="numPrecio" name="numPrecio" placeholder="Precio" min="0" max="50000" >
+                <small></small> 
+                <br>
+                
+                <div class="icons">
+                    <span><img src="../img/razaicono.png" alt="Icon raza"></span>
+                    <input type="text" name="Raza" id="txtRaza" min="2" placeholder="Raza" class="inputIcon" >
+                    <small></small>
+                    
+                    <span><img src="../img/cigueña.png" alt="Icon fecha nacimiento"></span>
+                    <input type="date" name="fecha" id="dateFechaNacimiento" min="1" placeholder="dd/mm/aaaa"  class="inputIcon">
+                    
+                    <span><img src="../img/sangre.png" alt="Icon tipo sangre"></span>
+                    <select name="tipoSangre" id="tipoSangre" placeholder="---Elegir---">
+                        <option value="Si">SI</option>
+                        <option value="No">NO</option>
+                    </select>
+                </div><br>
+                <div class="checkboxs icons">
+                    <img src="../img/fertibilidad.jpg" alt="Icon fertibilidad"><p>¿Esta Castrado?</p>
+                    <input type="checkbox" name="estaCastrado" id="chkEstaCastrado">
+                </div> <br>
+
+                <label for="radioTamaño">Tamaño:</label> <br> <br>
+                <label> Grande <input type="radio" name="radioTamaño" value="Grande" /></label>
+                <label> Mediano <input type="radio" name="radioTamaño" value="Mediano" checked/></label>
+                <label> Chico <input type="radio" name="radioTamaño" value="Chico"/></label><br>
+
+                
+        </fieldset>
+            <div class="divBotones">
+                <button type="submit" id="btnSubmit" class="formButton">
+                    <span><img src="../img/iconoGuardar.png" alt="" id="icon"></span>
+                    Guardar
+                </button>
+                    <button type="reset" id="btnCancelar" class="formButton">
+                        <span><img src="../img/cancel_icon.svg" alt="" id="icon"></span>
+                        Cancelar
+                    </button>
+                    <button type="submit" id="btnActualizar" class="formButton hidden">
+                        <span><img src="../img/upload_icon.svg" alt="" id="icon"></span>
+                        Modificar
+                    </button>
+                    <button type="button" id="btnEliminar" class="formButton hidden">
+                        <span><img src="../img/trashcan_icon.svg" alt="" id="icon"></span>
+                        Eliminar
+                    </button>
+
+            </form>
+        </div>
+            <div id="spinner">
+
+            </div>
+            <div class="container">
+                <div id="customAlert">
+
+                </div>
+            </div>
+
+            <section>
+                <div id="divTabla">
+
+                </div>
+            </section>
+
+            <div class="mainPage">
+                <a href="../principal.html" >Ir a la Pagina Principal</a>
+            </div>
+            
+            <footer>
+                    <ul class="linksfooter">
+                        <li> <a href="../nosotros.html">Nosotros</a> </li> &nbsp;&nbsp;
+                        <li> <a href="./administracion.html">Anuncio</a> </li>&nbsp;&nbsp;
+                        <li> <a href="#">Blog</a> </li>&nbsp;&nbsp;
+                        <li> <a href="#">Contacto</a> </li>
+                    </ul>
+                    <p id="copyright"> <i> Todos nuestros derechos reservados &copy; 2022</i> </p>
+            </footer>
+
+    </main>
+</body>
+</html>
